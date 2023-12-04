@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{background:'black'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <SportsSoccerIcon sx={{ display: { xs: 'none', md: 'flex',fontSize:'35px'}, mr: 1 }} />
+          <SportsSoccerIcon sx={{ display: { xs: 'none', md: 'flex',fontSize:'45px'}, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
