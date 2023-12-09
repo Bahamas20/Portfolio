@@ -1,17 +1,13 @@
 import React from 'react'
-import {
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-} from "react-router-dom";import Home from "./pages/Home.jsx"
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import Footer from './components/Footer';
+import Intro from './pages/Intro.jsx';
 
 const Layout = () => {
   return (
     <>
     <ResponsiveAppBar></ResponsiveAppBar>
-    <Home></Home>
+    <Intro></Intro>
     <Footer></Footer>
     </>
   )

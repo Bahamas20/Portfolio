@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
+import ComputerIcon from '@mui/icons-material/Computer';
 
 const pages = ['Home', 'Project', 'Skills','About Me','Contact Me'];
 
@@ -39,7 +39,7 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{background:'black'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <SportsSoccerIcon sx={{ display: { xs: 'none', md: 'flex',fontSize:'45px'}, mr: 1 }} />
+          <ComputerIcon sx={{ display: { xs: 'none', md: 'flex',fontSize:'55px'}, mr: 1,paddingRight:'15px'}} />
           <Typography
             variant="h6"
             noWrap
@@ -47,18 +47,21 @@ function ResponsiveAppBar() {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
+              display: { xs: 'flex' },
+              flexGrow: 1,
               fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontWeight: 500,
+              fontSize:"25px",
+              letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
+      
             }}
           >
             Hamas
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'}}}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -84,17 +87,22 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none'},
               }}
+              PaperProps={{
+                style: {
+                  backgroundColor: 'black' ,
+                  color:'white' // Change this to your desired background color
+                }}}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography className='font-open' textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <SportsSoccerIcon sx={{ display: { xs: 'flex', md: 'none'}, mr: 1 }} />
+          <ComputerIcon sx={{ display: { xs: 'flex', md: 'none'}, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -113,22 +121,17 @@ function ResponsiveAppBar() {
           >
             Hamas
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' ,justifyContent:'flex-end'}}}>
             {pages.map((page) => (
               <Button
+                
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'white', display: 'block',fontFamily:'Open Sans, sans-serif',textTransform:'capitalize'}}
               >
                 {page}
               </Button>
             ))}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-              <IconButton sx={{ p: 0 }}>
-                <Avatar sx={{background:'white',color:'black'}} >H</Avatar>
-              </IconButton>
           </Box>
         </Toolbar>
       </Container>

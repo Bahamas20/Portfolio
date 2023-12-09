@@ -2,4 +2,11 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+.font-mont {
+  font-family: 'Montserrat', sans-serif;
+
+}  
+
+.font-open {
+  font-family: 'Open Sans', sans-serif;
+}
