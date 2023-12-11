@@ -1,0 +1,92 @@
+/* #20AA7E */
+
+.changeColor {
+    color: #20AA7E;
+  }
+  .changeColor:hover {
+    color: #187d5d;
+  }
+
+.section {
+    padding:6rem 0 2rem;
+}
+
+.project {
+    padding-top: 60px;
+    background-color: black;
+    color: #20AA7E;
+    padding-bottom: 100px;
+}
+
+.font-open {
+    font-weight: 600;
+}
+
+.section_title {
+    font-size:53px;
+}
+
+.section_subtitle {
+    display: block;
+    font-size: small;
+    margin-bottom: 4rem;
+}
+
+.section_title,.section_subtitle {
+    text-align: center;
+}
+
+.container2 {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+
+.work_container {
+    grid-template-columns: repeat(1,max-content);
+    gap: 3rem;
+    justify-content: center;
+}
+
+.work_card {
+    background-color :white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    width: 700px;
+    text-align: center;
+    color: black;
+
+}
+
+.work_img {
+    width: 350px;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+
+}
+
+.work_title {
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.work_button {
+    color:black;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+.description {
+    font-size: 14px;
+}
