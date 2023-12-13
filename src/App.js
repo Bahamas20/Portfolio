@@ -2,7 +2,8 @@ import React from 'react'
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import Footer from './components/Footer';
 import Intro from './pages/Intro.jsx';
-import Project from './pages/Project';
+import Project from './pages/Project/Project';
+import Skills from './pages/Skills/Skills';
 
 const Layout = () => {
   return (
@@ -10,6 +11,7 @@ const Layout = () => {
     <ResponsiveAppBar></ResponsiveAppBar>
     <Intro></Intro>
     <Project></Project>
+    <Skills></Skills>
     <Footer></Footer>
     </>
   )

@@ -1,8 +1,8 @@
 import React from 'react'
-import Salesy from '../images/salesy.jpeg'
-import Smart from '../images/smart.jpeg'
-import Weapon from '../images/weapon.jpg'
-import Claylette from '../images/claylette.jpg'
+import Salesy from '../../images/salesy.jpeg'
+import Smart from '../../images/smart.jpeg'
+import Weapon from '../../images/weapon.jpg'
+import Claylette from '../../images/claylette.jpg'
 import WorksItems from './WorksItems.jsx'
 
 
