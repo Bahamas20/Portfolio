@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ComputerIcon from '@mui/icons-material/Computer';
 
-const pages = ['Home', 'Project', 'Skills','About Me','Contact Me'];
+const pages = ['Home', 'Projects', 'Skills','About Me','Contact Me'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

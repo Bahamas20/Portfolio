@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react'
-import React_logo from '../../images/logo.jpeg'
 import { useState } from 'react'
 import SkillItem from './SkillItem'
+import "./Skills.scss"
+import opencv_svg from '../../svg/opencv.svg'
+import tf_svg from '../../svg/tf.svg'
+import mssql_svg from '../../svg/mssql.svg'
+
 
 const skillsTag = [
     {
@@ -20,49 +24,90 @@ const skillsData = [
         tag:'Frontend'
     },    {
         id:2,
-        title:'React',
-        badge:'bx bxl-react',
+        title:'HTML',
+        badge:'bx bxl-html5',
+        tag:'Frontend'
+    },     {
+        id:3,
+        title:'CSS',
+        badge:'bx bxl-css3',
         tag:'Frontend'
     },    {
-        id:3,
-        title:'Node',
-        badge:'bx bxl-nodejs',
-        tag:'Backend'
-    },    {
         id:4,
-        title:'React',
-        badge:'bx bxl-react',
+        title:'Javascript',
+        badge:'bx bxl-javascript',
         tag:'Frontend'
     },    {
         id:5,
-        title:'React',
-        badge:'bx bxl-react',
+        title:'Git',
+        badge:'bx bxl-git',
         tag:'Frontend'
     },    {
         id:6,
-        title:'React',
-        badge:'bx bxl-react',
+        title:'Bootstrap',
+        badge:'bx bxl-bootstrap',
         tag:'Frontend'
     },    {
-        id:2,
-        title:'React',
-        badge:'bx bxl-react',
-        tag:'Frontend'
+        id:7,
+        title:'Python',
+        badge:'bx bxl-python',
+        tag:'Backend'
+    }
+    ,    {
+        id:8,
+        title:'Java',
+        badge:'bx bxl-java',
+        tag:'Backend'
     },    {
-        id:2,
-        title:'React',
-        badge:'bx bxl-react',
-        tag:'Frontend'
+        id:9,
+        title:'C++',
+        badge:'bx bxl-c-plus-plus',
+        tag:'Backend'
     },    {
-        id:2,
-        title:'React',
-        badge:'bx bxl-react',
-        tag:'Frontend'
+        id:10,
+        title:'PostgreSQL',
+        badge:'bx bxl-postgresql',
+        tag:'Backend'
     },    {
-        id:2,
-        title:'React',
-        badge:'bx bxl-react',
-        tag:'Frontend'
+        id:11,
+        title:'Spring',
+        badge:'bx bxl-spring-boot',
+        tag:'Backend'
+    } ,
+    {
+        id:12,
+        title:'Node',
+        badge:'bx bxl-nodejs',
+        tag:'Backend'
+    }
+    ,
+    {
+        id:13,
+        title:'MongoDB',
+        badge:'bx bxl-mongodb',
+        tag:'Backend'
+    },
+    {
+        id:14,
+        title:'OpenCV',
+        badge:'',
+        logo: opencv_svg,
+        tag:'Backend'
+    },
+    {
+        id:15,
+        title:'Tensorflow',
+        badge:'',
+        logo: tf_svg,
+        tag:'Backend'
+    }
+    ,
+    {
+        id:16,
+        title:'MSSQL',
+        badge:'',
+        logo: mssql_svg,
+        tag:'Backend'
     }
 ]
 

@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Intro from './pages/Intro.jsx';
 import Project from './pages/Project/Project';
 import Skills from './pages/Skills/Skills';
+import About from './pages/About';
 
 const Layout = () => {
   return (
@@ -12,6 +13,7 @@ const Layout = () => {
     <Intro></Intro>
     <Project></Project>
     <Skills></Skills>
+    <About></About>
     <Footer></Footer>
     </>
   )
