@@ -1,0 +1,41 @@
+
+.contact {
+    color: white;
+    background-color: #20AA7E;
+    text-align: center;
+    padding-top: 60px;
+
+    h1 {
+        font-size: 53px;
+    }
+}
+  
+.contact_form {
+    background-color: #20AA7E;
+    box-shadow: none;
+    margin-top: 50px;
+    
+}
+
+.contact_top {
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+
+    label {
+        padding-top: 10px;
+        
+    }
+}
+
+.contact_msg {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact_button {
+    margin-top: 10px;
+}
+

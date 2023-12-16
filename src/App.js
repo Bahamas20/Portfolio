@@ -5,6 +5,7 @@ import Intro from './pages/Intro.jsx';
 import Project from './pages/Project/Project';
 import Skills from './pages/Skills/Skills';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 const Layout = () => {
   return (
@@ -14,6 +15,7 @@ const Layout = () => {
     <Project></Project>
     <Skills></Skills>
     <About></About>
+    <Contact></Contact>
     <Footer></Footer>
     </>
   )
