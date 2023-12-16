@@ -5,7 +5,7 @@ import SkillSection from './SkillSection'
 function Skills() {
   return (
     <section className='skills' id='skills'>
-        <h1 className='section_title font-open'>Skills</h1>
+        <h1 className='section_title font-mont'>Skills</h1>
         <SkillSection></SkillSection>
     </section>
     )
