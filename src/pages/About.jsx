@@ -6,7 +6,7 @@ function About() {
   return (
     <div className='section about'>
         <h1 className='section_title font-mont'>About Me</h1>
-            <div className='description'>
+            <div className='description_text'>
             <div className='box'>
             <img className='about_img' src={image}></img>
             </div>

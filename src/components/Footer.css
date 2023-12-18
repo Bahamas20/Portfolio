@@ -1,0 +1,115 @@
+.footer {
+    background-color: black;
+    color: #20AA7E;
+    height: 100px;
+    padding-top: 40px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons .button{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    background:#fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0,0.1);
+    font-size: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    align-items: center;
+    
+}
+
+.buttons .button:hover {
+    width: 190px;
+}
+.buttons .button .icon {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.1s ease-out;
+
+} 
+.buttons .button .icon i{
+    font-size: 40px;
+    line-height: 60px;
+    color: #20AA7E;
+    padding-left: 10px;
+    padding-top: 4px;
+    transition: all 0.3s ease-out;
+
+}
+
+.buttons .button:nth-child(1):hover .icon {
+    background: #333;
+}
+.buttons .button:nth-child(1):hover .icon i{
+    color: white
+}
+.buttons .button:nth-child(1):hover  span{
+    color: #333
+}
+.buttons .button:nth-child(2):hover .icon {
+    background: #0077b5;
+}
+.buttons .button:nth-child(2):hover .icon i{
+    color: white
+}
+.buttons .button:nth-child(2):hover  span{
+    color: #0077b5;
+}
+
+.buttons .button:nth-child(3):hover .icon {
+    background: #DD2A7B;
+}
+.buttons .button:nth-child(3):hover .icon i{
+    color: white
+}
+.buttons .button:nth-child(3):hover  span{
+    color: #DD2A7B
+}
+
+.buttons .button:nth-child(4):hover .icon {
+    background: #D44638;
+}
+.buttons .button:nth-child(4):hover .icon i{
+    color: white
+}
+.buttons .button:nth-child(4):hover  span{
+    color: #D44638
+}
+
+
+
+.buttons .button span{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: all 0.3s ease-out;
+
+}
+
+.linked {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+    background-color: transparent; /* Make the background transparent */
+    cursor: pointer; /* Show pointer on hover to indicate interactivity */
+  }
+  

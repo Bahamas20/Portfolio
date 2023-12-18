@@ -38,9 +38,9 @@ function Contact() {
             
             '& .MuiInputBase-root': {
                 width:'400px',
-                color:'white',
+                color:'#20AA7E',
                 fontFamily:"'Montserrat', sans-serif",
-                background:"#266852"
+                background:"white"
             }
           }}
         />            
@@ -55,9 +55,9 @@ function Contact() {
             paddingRight:'5px',
             '& .MuiInputBase-root': {
                 width:'400px',
-                color:'white',
+                color:'#20AA7E',
                 fontFamily:"'Montserrat', sans-serif",
-                background:"#266852"
+                background:"white"
             }
           }}
         />         </div>
@@ -73,8 +73,8 @@ function Contact() {
             '& .MuiInputBase-root': {
                 width:'955px',
                 height:'300px',
-                color:'white',
-                background:"#266852",
+                color:'#20AA7E',
+                background:"white",
                 fontFamily:"'Montserrat', sans-serif"
             }
           }}
@@ -86,14 +86,14 @@ function Contact() {
         endIcon={<SendIcon />} 
         type="submit"
         sx ={{
-            color:'#20AA7E',
-            background:'white',
+            color:'white',
+            background:'#20AA7E',
             width:'955px',
             marginLeft:'80px',
             height:'40px',
             '&:hover': {
-                background: '#00ffca', // Set the desired color on hover
-                color: 'black', // Set the text color on hover
+                background: '#24dea3', // Set the desired color on hover
+                color: 'white', // Set the text color on hover
               }
         }}
         
