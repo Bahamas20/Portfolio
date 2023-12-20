@@ -6,17 +6,28 @@ import Project from './pages/Project/Project';
 import Skills from './pages/Skills/Skills';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { Element } from 'react-scroll';
 
 const Layout = () => {
   return (
     <>
-    <ResponsiveAppBar></ResponsiveAppBar>
-    <Intro></Intro>
-    <Project></Project>
-    <Skills></Skills>
-    <About></About>
-    <Contact></Contact>
-    <Footer></Footer>
+      <ResponsiveAppBar></ResponsiveAppBar>
+      <Element name="intro">
+        <Intro></Intro>
+      </Element>
+      <Element name="project">
+        <Project></Project>
+      </Element>
+      <Element name="skills">
+        <Skills></Skills>
+      </Element>
+      <Element name="about">
+        <About></About>
+      </Element>
+      <Element name="contact">
+        <Contact></Contact>
+      </Element>
+      <Footer></Footer>
     </>
   )
   }

@@ -4,7 +4,7 @@ import image from '../images/abt.png'
 
 function About() {
   return (
-    <div className='section about'>
+    <div className='section about' id='about me'>
         <h1 className='section_title font-mont'>About Me</h1>
             <div className='description_text'>
             <div className='box'>

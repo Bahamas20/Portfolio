@@ -15,7 +15,7 @@ function Intro() {
         loop: {},
     });
   return (  
-    <div className='intro-text' >
+    <div className='intro-text' id='home' >
         <div className='white-block'></div>
         <div className='introduction'>
             <div className='intro-container font-mont'>

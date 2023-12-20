@@ -13,6 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ComputerIcon from '@mui/icons-material/Computer';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 
 const pages = ['Home', 'Projects', 'Skills','About Me','Contact Me'];
 
@@ -34,6 +36,15 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  function scrollToSection(id) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  }
 
   return (
     <AppBar position="static" sx={{background:'black'}}>
@@ -126,7 +137,7 @@ function ResponsiveAppBar() {
               <Button
                 
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => scrollToSection(page.toLowerCase())}
                 sx={{ my: 2, color: 'white', display: 'block',fontFamily:'Open Sans, sans-serif',textTransform:'capitalize'}}
               >
                 {page}

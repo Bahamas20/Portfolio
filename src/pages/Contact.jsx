@@ -22,7 +22,7 @@ function Contact() {
     };
   
   return (
-    <div className='section contact'>
+    <div className='section contact' id='contact me'>
         <h1 className='font-mont'>Contact Me</h1>
     <form className='contact_form' ref={form} onSubmit={sendEmail}>
         <div className='contact_top'>

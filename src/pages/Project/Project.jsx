@@ -6,7 +6,7 @@ import Works from './Works'
 
 function Project() {
   return (
-    <section className="project" id='portfolio'>
+    <section className="project" id='projects'>
         <h2 className="section_title font-mont">Projects</h2>
         <Works />
     </section>
