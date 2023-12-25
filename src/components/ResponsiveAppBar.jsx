@@ -47,7 +47,11 @@ function ResponsiveAppBar() {
 <AppBar position="static" sx={{backgroundColor:'black'}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <IconButton
+
+          <ComputerIcon sx={{ display: { xs: 'none', md: 'flex',fontSize:'55px'}, mr: 1,paddingRight:'15px'}} />
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'}}}>
+          <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -57,9 +61,6 @@ function ResponsiveAppBar() {
             >
               <MenuIcon />
             </IconButton>
-          <ComputerIcon sx={{ display: { xs: 'none', md: 'flex',fontSize:'55px'}, mr: 1,paddingRight:'15px'}} />
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'}}}>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
