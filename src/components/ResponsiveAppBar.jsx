@@ -7,13 +7,9 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import ComputerIcon from '@mui/icons-material/Computer';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 
 const pages = ['Home', 'Projects', 'Skills','About Me','Contact Me'];
@@ -39,6 +35,7 @@ function ResponsiveAppBar() {
 
   function scrollToSection(id) {
     const element = document.getElementById(id);
+    console.log(id)
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
@@ -47,33 +44,10 @@ function ResponsiveAppBar() {
   }
 
   return (
-    <AppBar position="static" sx={{background:'black'}}>
+<AppBar position="static" sx={{backgroundColor:'black'}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <ComputerIcon sx={{ display: { xs: 'none', md: 'flex',fontSize:'55px'}, mr: 1,paddingRight:'15px'}} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 500,
-              fontSize:"25px",
-              letterSpacing: '.1rem',
-              color: 'inherit',
-              textDecoration: 'none',
-      
-            }}
-          >
-            Hamas
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'}}}>
-            <IconButton
+        <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -83,6 +57,9 @@ function ResponsiveAppBar() {
             >
               <MenuIcon />
             </IconButton>
+          <ComputerIcon sx={{ display: { xs: 'none', md: 'flex',fontSize:'55px'}, mr: 1,paddingRight:'15px'}} />
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none'}}}>
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
@@ -97,17 +74,17 @@ function ResponsiveAppBar() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none'},
-              }}
               PaperProps={{
                 style: {
                   backgroundColor: 'black' ,
                   color:'white' // Change this to your desired background color
                 }}}
+              sx={{
+                display: { xs: 'block', md: 'none'}
+              }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={() => { handleCloseNavMenu(); scrollToSection(page.toLowerCase()); }}>
                   <Typography className='font-open' textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}

@@ -90,3 +90,37 @@
 .description {
     font-size: 14px;
 }
+
+@media (max-width: 480px) {
+    .project {
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .section_title {
+        font-size:41px !important;
+        
+    }
+
+    .work_card {
+        width: 320px;    
+    }
+    
+    .work_img {
+        width: 250px;
+        border-radius: 0.5rem;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    
+    }
+
+    .work_title {
+        font-size: 25px;
+    }
+    
+    .description {
+        font-size: 13px;
+    }
+    
+    
+}
