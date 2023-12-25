@@ -24,9 +24,8 @@ const projectData = [
         id:3,
         image: Weapon,
         title: 'Weapon Detector',
-        description : 'Weapon Detector is a computer vision project focused on automatically identifying weapons within a dataset of images. We integrated various models like CNN, YOLO, and VGG to enhance the detection process. This project showcases a hands-on exploration of advanced deep learning techniques, combining different architectures.',
-        link: 'https://github.com/pixelmasters4243/weapon'
-    },
+        description : 'Weapon Detector is a computer vision project focused on automatically identifying weapons within a dataset of images. We integrated various models like CNN, YOLO, and VGG to enhance the detection process. This project showcases a hands-on exploration of advanced deep learning techniques, combining different architectures.'
+        },
     {
         id:4,
         image: Claylette,
