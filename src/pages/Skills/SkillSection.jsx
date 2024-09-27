@@ -5,6 +5,7 @@ import "./Skills.scss"
 import opencv_svg from '../../svg/opencv.svg'
 import tf_svg from '../../svg/tf.svg'
 import mssql_svg from '../../svg/mssql.svg'
+import mysql_svg from '../../svg/mysqll.svg'
 
 
 const skillsTag = [
@@ -59,11 +60,6 @@ const skillsData = [
         badge:'bx bxl-java',
         tag:'Backend'
     },    {
-        id:9,
-        title:'C++',
-        badge:'bx bxl-c-plus-plus',
-        tag:'Backend'
-    },    {
         id:10,
         title:'PostgreSQL',
         badge:'bx bxl-postgresql',
@@ -104,9 +100,15 @@ const skillsData = [
     ,
     {
         id:16,
-        title:'MSSQL',
+        title:'MySQL',
         badge:'',
-        logo: mssql_svg,
+        logo: mysql_svg,
+        tag:'Backend'
+    },
+    {
+        id:17,
+        title:'AWS',
+        badge:'bx bxl-aws',
         tag:'Backend'
     }
 ]
