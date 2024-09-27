@@ -91,6 +91,14 @@
     font-size: 14px;
 }
 
+.tech {
+    font-size: 15px;
+    padding-top: 15px;
+    font-style: italic;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+}
+
 @media (max-width: 480px) {
     .project {
         padding-top: 20px;

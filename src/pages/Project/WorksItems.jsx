@@ -7,6 +7,7 @@ const WorksItems = ({item}) => {
         <img src={item.image} alt='' className='work_img'></img>
         <h1 className='work_title'>{item.title}</h1>
         <p className='description font-mont'>{item.description}</p>
+        <p className='description tech font-mont'>{item.tech}</p>
         {item.link && (
   <a href={item.link} className='changeColor'>
     <GitHubIcon
