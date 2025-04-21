@@ -92,8 +92,8 @@ function Contact() {
             marginLeft:'80px',
             height:'40px',
             '&:hover': {
-                background: '#24dea3', // Set the desired color on hover
-                color: 'white', // Set the text color on hover
+                background: '#24dea3',
+                color: 'white', 
               }
         }}
         

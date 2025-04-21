@@ -1,0 +1,15 @@
+#experience {
+    padding:60px 50px 0px 50px;
+    border-top: 10px solid black;
+}
+
+.timeline-dot {
+    background-color: #20AA7E !important;
+    padding: 6px !important;
+  }
+  
+.timeline-dot-outlined {
+    border-color: #20AA7E !important;
+    padding: 6px !important;
+  }
+  

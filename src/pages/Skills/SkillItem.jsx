@@ -5,7 +5,6 @@ import "./Skills.scss"
 
 
 const SkillItem = ({item}) => {
-  console.log({item})
   return (
 
     <div className='skills-content'>

@@ -6,6 +6,7 @@ import opencv_svg from '../../svg/opencv.svg'
 import tf_svg from '../../svg/tf.svg'
 import mssql_svg from '../../svg/mssql.svg'
 import mysql_svg from '../../svg/mysqll.svg'
+import fastapi_svg from '../../svg/fastapi.svg'
 
 
 const skillsTag = [
@@ -14,105 +15,132 @@ const skillsTag = [
     },
     {
         name:'Backend'
+    },
+    {
+        name: 'Others'
     }
 ]
 
 const skillsData = [
     {
-        id:1,
-        title:'React',
-        badge:'bx bxl-react',
-        tag:'Frontend'
-    },    {
-        id:2,
-        title:'HTML',
-        badge:'bx bxl-html5',
-        tag:'Frontend'
-    },     {
-        id:3,
-        title:'CSS',
-        badge:'bx bxl-css3',
-        tag:'Frontend'
-    },    {
-        id:4,
-        title:'Javascript',
-        badge:'bx bxl-javascript',
-        tag:'Frontend'
-    },    {
-        id:5,
-        title:'Git',
-        badge:'bx bxl-git',
-        tag:'Frontend'
-    },    {
-        id:6,
-        title:'Bootstrap',
-        badge:'bx bxl-bootstrap',
-        tag:'Frontend'
-    },    {
-        id:7,
-        title:'Python',
-        badge:'bx bxl-python',
-        tag:'Backend'
-    }
-    ,    {
-        id:8,
-        title:'Java',
-        badge:'bx bxl-java',
-        tag:'Backend'
-    },    {
-        id:10,
-        title:'PostgreSQL',
-        badge:'bx bxl-postgresql',
-        tag:'Backend'
-    },    {
-        id:11,
-        title:'Spring',
-        badge:'bx bxl-spring-boot',
-        tag:'Backend'
-    } ,
-    {
-        id:12,
-        title:'Node',
-        badge:'bx bxl-nodejs',
-        tag:'Backend'
-    }
-    ,
-    {
-        id:13,
-        title:'MongoDB',
-        badge:'bx bxl-mongodb',
-        tag:'Backend'
+      id: 1,
+      title: 'React',
+      badge: 'bx bxl-react',
+      tag: 'Frontend'
     },
     {
-        id:14,
-        title:'OpenCV',
-        badge:'',
-        logo: opencv_svg,
-        tag:'Backend'
+      id: 2,
+      title: 'HTML',
+      badge: 'bx bxl-html5',
+      tag: 'Frontend'
     },
     {
-        id:15,
-        title:'Tensorflow',
-        badge:'',
-        logo: tf_svg,
-        tag:'Backend'
-    }
-    ,
-    {
-        id:16,
-        title:'MySQL',
-        badge:'',
-        logo: mysql_svg,
-        tag:'Backend'
+      id: 3,
+      title: 'CSS',
+      badge: 'bx bxl-css3',
+      tag: 'Frontend'
     },
     {
-        id:17,
-        title:'AWS',
-        badge:'bx bxl-aws',
-        tag:'Backend'
+      id: 4,
+      title: 'Javascript',
+      badge: 'bx bxl-javascript',
+      tag: 'Frontend'
+    },
+    {
+      id: 5,
+      title: 'Git',
+      badge: 'bx bxl-git',
+      tag: 'Others'
+    },
+    {
+      id: 6,
+      title: 'Bootstrap',
+      badge: 'bx bxl-bootstrap',
+      tag: 'Frontend'
+    },
+    {
+      id: 7,
+      title: 'Python',
+      badge: 'bx bxl-python',
+      tag: 'Backend'
+    },
+    {
+      id: 8,
+      title: 'Java',
+      badge: 'bx bxl-java',
+      tag: 'Backend'
+    },
+    {
+      id: 10,
+      title: 'PostgreSQL',
+      badge: 'bx bxl-postgresql',
+      tag: 'Backend'
+    },
+    {
+      id: 11,
+      title: 'Spring',
+      badge: 'bx bxl-spring-boot',
+      tag: 'Backend'
+    },
+    {
+      id: 12,
+      title: 'Node',
+      badge: 'bx bxl-nodejs',
+      tag: 'Backend'
+    },
+    {
+      id: 13,
+      title: 'MongoDB',
+      badge: 'bx bxl-mongodb',
+      tag: 'Backend'
+    },
+    {
+      id: 14,
+      title: 'OpenCV',
+      badge: '',
+      logo: opencv_svg,
+      tag: 'Others'
+    },
+    {
+      id: 15,
+      title: 'Tensorflow',
+      badge: '',
+      logo: tf_svg,
+      tag: 'Others'
+    },
+    {
+      id: 16,
+      title: 'MySQL',
+      badge: '',
+      logo: mysql_svg,
+      tag: 'Backend'
+    },
+    {
+      id: 17,
+      title: 'AWS',
+      badge: 'bx bxl-aws',
+      tag: 'Others'
+    },
+    {
+      id: 18,
+      title: 'FastAPI',
+      badge: '',
+      logo: fastapi_svg,
+      tag: 'Backend'
+    },
+    {
+      id: 19,
+      title: 'GraphQL',
+      badge: 'bx bxl-graphql',
+      tag: 'Backend'
+    },
+    {
+      id: 20,
+      title: 'Docker',
+      badge: 'bx bxl-docker',
+      tag: 'Others'
     }
-]
-
+  ];
 
 function SkillSection() {
     
@@ -130,16 +158,9 @@ function SkillSection() {
     },[item])
 
     const handleClick = (e,index) => {
-        console.log(e.target.textContent)
+        console.log(index)
         setItem({name:e.target.textContent})
-        if (e.target.textContent != item.name) {
-            if(active == 0) {
-                setActive(1)
-            }
-            else {
-                setActive(0)
-            }
-        }
+        setActive(index);
     }
     
 

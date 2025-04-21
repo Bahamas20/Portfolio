@@ -30,11 +30,11 @@ function Footer() {
           </div>
           <span className='font-mont'>Instagram</span>
           </div>
-          <div className='button' onClick={() => openLink('mailto:mohamedhamas95@gmail.com')}>
+          <div className='button' onClick={() => openLink('mailto:e0726186@u.nus.edu')}>
           <div className='icon'>
-          <i class='bx bxl-gmail' ></i>  
+          <i class='bx bx-envelope' ></i>  
           </div>          
-          <span className='font-mont'>Gmail</span>
+          <span className='font-mont'>Email</span>
         </div>
       </div>
     </section>

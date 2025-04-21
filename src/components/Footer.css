@@ -85,13 +85,13 @@
 }
 
 .buttons .button:nth-child(4):hover .icon {
-    background: #D44638;
+    background: #0078d4;
 }
 .buttons .button:nth-child(4):hover .icon i{
-    color: white
+    color: white;
 }
 .buttons .button:nth-child(4):hover  span{
-    color: #D44638
+    color: #0078d4;
 }
 
 

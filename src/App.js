@@ -7,6 +7,7 @@ import Skills from './pages/Skills/Skills';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { Element } from 'react-scroll';
+import Experiences from './pages/Experiences/Experiences';
 
 const Layout = () => {
   return (
@@ -14,6 +15,9 @@ const Layout = () => {
       <ResponsiveAppBar></ResponsiveAppBar>
       <Element name="intro">
         <Intro></Intro>
+      </Element>
+      <Element name="project">
+        <Experiences></Experiences>
       </Element>
       <Element name="project">
         <Project></Project>

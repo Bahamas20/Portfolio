@@ -5,11 +5,19 @@ const WorksItems = ({item}) => {
   return (
     <div className='work_card font-mont' key={item.id}>
         <img src={item.image} alt='' className='work_img'></img>
-        <h1 className='work_title'>{item.title}</h1>
+        <h1 className='work_title'>
+          {item.web_link ? (
+            <a href={item.web_link} className="work_title_link" target="_blank" rel="noopener noreferrer">
+              {item.title}
+            </a>
+          ) : (
+            item.title
+          )}
+        </h1>
         <p className='description font-mont'>{item.description}</p>
         <p className='description tech font-mont'>{item.tech}</p>
         {item.link && (
-  <a href={item.link} className='changeColor'>
+  <a href={item.link} className='changeColor' target="_blank">
     <GitHubIcon
       sx={{ fontSize: '55px' }}
       onMouseOver={({ target }) => (target.style.color = '#187d5d')}

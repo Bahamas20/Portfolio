@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import ComputerIcon from '@mui/icons-material/Computer';
 
 
-const pages = ['Home', 'Projects', 'Skills','About Me','Contact Me'];
+const pages = ['Home', 'Experience', 'Projects', 'Skills','About Me','Contact Me'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -35,7 +35,6 @@ function ResponsiveAppBar() {
 
   function scrollToSection(id) {
     const element = document.getElementById(id);
-    console.log(id)
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
