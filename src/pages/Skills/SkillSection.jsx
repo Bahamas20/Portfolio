@@ -168,7 +168,7 @@ function SkillSection() {
     <div>
         <div className='skill_buttons'>
         {skillsTag.map((item, index) => (
-            ((active === 0 && item.name === 'Frontend') || (active === 1 && item.name === 'Backend')  ) ? (
+            ((active === 0 && item.name === 'Frontend') || (active === 1 && item.name === 'Backend') || (active === 2 && item.name === 'Others')) ? (
                 <span
                 onClick={(e) => handleClick(e, index)}
                 className='skill_button_false font-mont'
