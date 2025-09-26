@@ -19,7 +19,7 @@ const experienceData = [
     logo: Visenze,
     companyTitle: 'ViSenze Pte Ltd',
     role: 'Software Engineer Intern',
-    date: 'Jan 2025 – Present',
+    date: 'Jan 2025 – Jun 2025',
     description:
       "Focused on full-stack development for visual search tools and Shopify apps, building dynamic UI components, backend APIs, and automation scripts to enhance user onboarding and app reliability.",
     tech: 'React.js, Node.js, Python, GraphQL, PostgreSQL, Liquid, Polaris, Git, Docker'
@@ -28,7 +28,7 @@ const experienceData = [
     id: 2,
     logo: Krux,
     companyTitle: 'Krux Ventures Pte Ltd',
-    role: 'Machine Learning Intern',
+    role: 'Software Engineer Intern',
     date: 'Jul 2024 – Dec 2024',
     description:
       "Worked on full-stack development of the Picolibo website, deploying generative models and building FastAPI services. Scaled internal tools with Docker and AWS infrastructure.",

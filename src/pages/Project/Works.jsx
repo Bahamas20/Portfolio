@@ -14,7 +14,9 @@ const projectData = [
         image: HamJam,
         title: 'HamJam',
         description: 'HamJam is a full-stack audio hosting web app I built to experiment with file storage, media playback, and containerized deployment. I wanted a place where users could upload, store, and play back their own audio files in a clean interface like a mini personal SoundCloud.',
-        tech: 'React.js, Node.js, Express, PostgreSQL, AWS S3, Docker'
+        tech: 'React.js, Node.js, Express, PostgreSQL, AWS S3, Docker',
+        web_link: 'https://htx-audio-library-1.onrender.com/login',
+        link: 'https://github.com/Bahamas20/HTX_Audio_Library',
     },
     {
         id: 2,
@@ -29,7 +31,7 @@ const projectData = [
         title: 'PICOLIBO',
         description: 'PICOLIBO is an innovative workshop app designed by Krux Ventures to empower children to create their own stories using generative AI models. This app offers a hands-on experience, allowing young learners to craft unique narratives and visualize them through AI-generated imagery.',
         tech: 'R, Python, HTML, CSS, JS, Docker, Git, AWS, Nginx',
-        web_link: 'https://app.orative.tech/'
+        web_link: 'https://storycreator.picolibo.com/'
     },
     {
         id:4,
