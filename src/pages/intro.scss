@@ -4,7 +4,7 @@
   .intro-text {
     .text2 {
       
-      padding-left: 800px;
+      margin-left: 760px;
 
       h2 {
         font-weight: 400;
@@ -17,7 +17,7 @@
 
     h1 {
       color: black;
-      font-size: 53px;
+      font-size: 45px;
       margin: 0;
       font-weight: 400;
 
@@ -27,12 +27,13 @@
 
 .introduction {
   display: flex;
+  margin-right: 40px;
 }
 
 .ai-container {
   height: 200px;
   width: 200px;
-  padding-left: 250px;
+  padding-left: 100px;
 }
 
 .db-container {
@@ -45,6 +46,7 @@
 .intro-container {
   padding-left: 100px;
   padding-top: 50px;
+  width: 550px;
 }
 
 .white-block {

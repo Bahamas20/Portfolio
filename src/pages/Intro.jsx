@@ -1,8 +1,6 @@
 import React from 'react'
 import './intro.scss'
 import {useTypewriter,Cursor} from 'react-simple-typewriter'
-import { ReactSVG } from "react-svg"
-import db_svg from '../svg/db.svg'
 import Lottie from "lottie-react";
 import ai_animation from "../lotties/ai logo.json"
 import database_animation from "../lotties/database.json"
@@ -11,7 +9,7 @@ import database_animation from "../lotties/database.json"
 function Intro() {
 
     const [text] = useTypewriter({
-        words:['Programmer.','Student.'],
+        words:['Software Engineer.','NUS Graduate.', 'System Analyst.'],
         loop: {},
     });
   return (  
@@ -35,8 +33,8 @@ function Intro() {
         </div>
         <div className='text2 font-open'>
     
-            <h2>I'm a student in National University of Singapore<br/>
-        Specialising in <span>AI</span>, <span>Machine Learning</span> and <span>Databases</span></h2>
+            <h2>I'm a Computer Science Graduate from National University of Singapore<br/>
+        Specialised in <span>AI</span>, <span>Machine Learning</span> and <span>Databases</span></h2>
             
         </div>
     </div>

@@ -8,7 +8,7 @@ const SkillItem = ({item}) => {
   return (
 
     <div className='skills-content'>
-      <h1 className='font-open'>{item.title}</h1>
+      <h2 className='font-open'>{item.title}</h2>
       {item.badge !== '' ? (
         <i className={item.badge}></i>
       ) : <img src={item.logo} ></img>
